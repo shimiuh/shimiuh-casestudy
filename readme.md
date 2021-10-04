@@ -1,6 +1,6 @@
-Welcome to the BigSpring Case-Study! 
+Welcome to the A Case-Study! 
 
-This project is designed to serve as a representative model of the end-to-end engineering process that we follow at BigSpring. 
+This project is designed to serve as a representative model of the end-to-end engineering process for an intervew. 
 
 The project has the following phases:
 
@@ -19,5 +19,3 @@ Non-goals of this project:
 
 1. We do not expect code that fulfills all aspects of the spec! Please do not spend more than a day of your time on this. The intent is to understand how you think about problems and write code, not whether you can implement a spec end to end in limited time.
 2. We do not expect a production-ready code base. Please feel free to "cut corners" where appropriate: data persistence, infrastructure, and polished front-end design are all areas that could be ignored (or, focused on, if that's your thing!).
-
-Reach out to arun@bigspring.io with any questions you have.
