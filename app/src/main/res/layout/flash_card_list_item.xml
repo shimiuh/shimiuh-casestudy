@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="card"
+            type="com.shimi.flashcardmanagement.model.FlashCard" />
+
+        <variable
+            name="viewmodel"
+            type="com.shimi.flashcardmanagement.modelBinding.CardsViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="25dp"
+        app:cardCornerRadius="5dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/teal_200"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/gray_dark"
+                android:textSize="21dp"
+                android:paddingTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="5dp"
+                android:text="@{card.cardQuestion}"/>
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_google_signin_btn_text_dark"
+                android:textSize="21dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
+                android:text="@{card.cardAnswer}"/>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:clickable="true"
+            android:onClick="@{(v) -> viewmodel.deleteCard(card.cardId)}"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@android:drawable/ic_menu_delete"/>
+
+    </androidx.cardview.widget.CardView>
+</layout>
+
+
+
+
+

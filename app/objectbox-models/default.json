@@ -1,0 +1,85 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5645997918755588453",
+      "lastPropertyId": "6:812520434580613683",
+      "name": "FlashCard",
+      "properties": [
+        {
+          "id": "1:1146793305156217311",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:629070243970230342",
+          "name": "cardQuestion",
+          "type": 9
+        },
+        {
+          "id": "3:3505521838093314874",
+          "name": "cardAnswer",
+          "type": 9
+        },
+        {
+          "id": "5:2647607318750780473",
+          "name": "languageCode",
+          "type": 9
+        },
+        {
+          "id": "6:812520434580613683",
+          "name": "cardId",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:8161831879707234416",
+      "lastPropertyId": "3:9090217553635905674",
+      "name": "Language",
+      "properties": [
+        {
+          "id": "1:3748912529544386360",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3570906818853192516",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:9090217553635905674",
+          "name": "code",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:8161831879707234416",
+  "lastIndexId": "0:0",
+  "lastRelationId": "1:1005506361585721330",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    6912598540755437817
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    7748078212054183566,
+    2972933303120093361,
+    1623661851235797383,
+    9048494926153425342
+  ],
+  "retiredRelationUids": [
+    1005506361585721330
+  ],
+  "version": 1
+}
